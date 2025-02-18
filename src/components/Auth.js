@@ -8,7 +8,8 @@ const Auth = ({ setToken }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const url = isLogin ? 'http://localhost:5000/auth/login' : 'http://localhost:5000/auth/signup';
+        // const url = isLogin ? 'http://localhost:5000/auth/login' : 'http://localhost:5000/auth/signup'; // Local frontend (localhost)
+        const url = isLogin ? 'https://newsapp-xmx1.onrender.com/auth/login' : 'https://newsapp-xmx1.onrender.com/auth/signup'; // online render frontend (render)
         const data = { email, password, ...(isLogin ? {} : { name }) };
 
         const res = await fetch(url, {

@@ -10,7 +10,8 @@ const Login = ({setIsAuthenticated}) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("http://localhost:5000/auth/login", {
+        // const response = await fetch("http://localhost:5000/auth/login", { //local
+        const response = await fetch("https://newsapp-xmx1.onrender.com/auth/login", { // render
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
