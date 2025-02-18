@@ -16,8 +16,8 @@ connectDB();
 
 // Middleware
 app.use(cors({
-    // origin: "http://localhost:3000",  // Replace with your frontend URL
-    origin: "https://newsapp-xmx1.onrender.com/",
+    // origin: "http://localhost:3000",  //use for local testing (frontend)
+    origin: "https://newsapp-frontend-pxec.onrender.com",   //use for online render (frontend) 
     credentials: true,
 }));
 app.use(express.json());
