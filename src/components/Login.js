@@ -10,8 +10,7 @@ const Login = ({setIsAuthenticated}) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // const response = await fetch("http://localhost:5000/auth/login", { //local
-        const response = await fetch("${process.env.REACT_APP_BACKEND_URL}/auth/login", { // render
+        const response = await fetch("${process.public_env.REACT_APP_BACKEND_URL}/auth/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),

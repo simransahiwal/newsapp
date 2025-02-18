@@ -8,8 +8,7 @@ const Auth = ({ setToken }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // const url = isLogin ? 'http://localhost:5000/auth/login' : 'http://localhost:5000/auth/signup'; // Local backend (localhost)
-        const url = isLogin ? '${process.env.REACT_APP_BACKEND_URL}/auth/login' : '${process.env.REACT_APP_BACKEND_URL}/auth/signup'; // online render backend (render)
+        const url = isLogin ? '${process.public_env.REACT_APP_BACKEND_URL}/auth/login' : '${process.public_env.REACT_APP_BACKEND_URL}/auth/signup';
         const data = { email, password, ...(isLogin ? {} : { name }) };
 
         const res = await fetch(url, {
