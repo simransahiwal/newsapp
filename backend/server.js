@@ -16,7 +16,8 @@ connectDB();
 
 // Middleware
 app.use(cors({
-    origin: "http://localhost:3000",  // Replace with your frontend URL
+    // origin: "http://localhost:3000",  // Replace with your frontend URL
+    origin: "https://newsapp-xmx1.onrender.com/",
     credentials: true,
 }));
 app.use(express.json());
