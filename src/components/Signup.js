@@ -26,7 +26,7 @@ const Signup = ({ toggleForm }) => {
 
         try {
             // const response = await axios.post("http://localhost:5000/auth/signup", formData); //local
-            const response = await axios.post("https://newsapp-xmx1.onrender.com/auth/signup", formData); //frontend
+            const response = await axios.post("${process.env.REACT_APP_BACKEND_URL}/auth/signup", formData); //frontend
             localStorage.setItem("token", response.data.token); // Save token to localStorage
             alert("Signup successful!");
             // Redirect to home or another page after successful signup

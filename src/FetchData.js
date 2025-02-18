@@ -10,7 +10,7 @@ const FetchData = () => {
       try {
         // Replace with your backend URL
         // const response = await axios.get("http://localhost:5000/api/data"); //local
-        const response = await axios.get("https://newsapp-xmx1.onrender.com/api/data"); //render
+        const response = await axios.get("${process.env.REACT_APP_BACKEND_URL}/api/data"); //render
 
         // Log the response to check the data from the backend
         console.log("Fetched data:", response.data);
