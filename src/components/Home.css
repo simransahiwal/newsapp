@@ -1,0 +1,103 @@
+/* Global resets to avoid unwanted margins */
+body {
+  margin: 0;
+  padding: 0;
+  min-height:100%;
+  overflow-x:hidden;
+}
+/* Fixed background video */
+.background-video {
+   /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+  z-index: -1;
+}  
+
+.background-video .video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter:blur(15px) brightness(60%);
+} 
+
+/* Scrollable content */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-top: 80px; /* optional: adjust spacing if needed */
+  box-sizing: border-box; 
+}
+.navbar{
+  background: rgba(8, 8, 7, 0.5);
+}
+.nav{
+  /* text-decoration: none; */
+  color:white;
+}
+.nav:hover{
+  /* text-decoration: none; */
+  box-shadow: rgba(255, 255, 255, 0.2) 0 2px 8px 0;
+  color:white;
+}
+
+.nav img{
+  height:50px;
+  width:194px;
+}
+
+ .logoutbtn{
+  margin: 5px 20px;
+
+ }
+ .timeweather{
+  background-color: rgba(8, 8, 7, 0.5);
+  color:white;
+ }
+ .category-news{
+  color:rgb(255, 255, 255);
+  text-decoration: underline;
+ }
+ .saved-news{
+  color:rgb(255,255,255);
+ }
+.news-card{
+  background-color: rgba(255,255,255,0.5);
+}
+.btn-group{
+  display: flex;
+  justify-content: space-between; /* This pushes left-group to left and right-group to right */
+  align-items: center;
+}
+
+.right-group {
+  display: flex;
+  gap: 10px; /* Optional: spacing between right buttons */
+}
+.pop-up{
+  margin-top: 55px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  border-radius: "20px"
+}
+
+.footer{
+  /* position: sticky; */
+  width: 100%;
+  /* background-color: #222; */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+    position: relative;
+  background: rgba(8, 8, 7, 0.5);
+}

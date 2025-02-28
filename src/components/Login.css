@@ -1,0 +1,133 @@
+/* Elegant Slate Theme */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.video-background .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter:blur(15px);
+}
+
+.video-background .content {
+  position: relative;
+  z-index: 1;
+  /* Center your content, optional */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white; /* Example styling */
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .login-card {
+    background: rgba(8, 8, 7, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* filter:brightness(60%); */
+  }
+  
+  .login-card h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ffffff; /* Dark slate */
+  }
+  
+  .login-card h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .login-card form {
+    margin: 20px 0;
+  }
+  
+  .login-card input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .login-card input:focus {
+    border-color: #3d5630; /* Accent teal on focus */
+  }
+  
+  .login-card button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-card button[type="submit"] {
+    background-color: #5c7545; /* Muted teal */
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .login-card button[type="submit"]:hover {
+    background-color: #334207; /* Slightly darker teal */
+  }
+  
+  .login-card p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .login-card p button {
+    background: none;
+    border: none;
+    color: #e3f7ab;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    
+  }
+  
+  @media (max-width: 500px) {
+    .login-card {
+      padding: 30px;
+    }
+  }
+  
